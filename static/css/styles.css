@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+} */
+
+button.recording {
+    background-color: gray !important;
+}
+
+button.recording svg {
+    display: none;
+}
+
+button.recording::after {
+    content: "■";
+    /* Unicode for a stop symbol */
+    font-size: 24px;
+    color: white;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20%);
+}
+
+#audio-review {
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+}

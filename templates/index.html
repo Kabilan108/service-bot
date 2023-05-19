@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Customer Service</title>
+
+    <!-- Add Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add custom CSS -->
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <h1 class="text-center">AI Customer Service</h1>
+        </div>
+        <div class="row mt-4">
+            <!-- Conversation Area -->
+            <div class="col-12">
+                <div id="conversation" class="border rounded p-3"
+                    style="height: 400px; overflow-y: auto; background: #f8f8f8;">
+                    <!-- Messages will be added here dynamically -->
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <!-- Text Input for user message -->
+            <div class="col-8">
+                <input id="userMessage" class="form-control" placeholder="Type your message..." />
+                <p id="statusMessage" class="text-muted"></p>
+                <div id="audio-review"></div>
+            </div>
+            <!-- Record Button -->
+            <div class="col-2">
+                <button id="record" class="btn btn-primary form-control">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mic"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+                        <path
+                            d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z" />
+                    </svg>
+                </button>
+            </div>
+            <!-- Send Button -->
+            <div class="col-2">
+                <button id="send" class="btn btn-info form-control">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Add custom JS -->
+    <script src="/static/js/app.js"></script>
+</body>
+
+</html>
