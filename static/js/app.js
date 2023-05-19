@@ -159,16 +159,13 @@ sendButton.addEventListener('click', function () {
     statusMessage.innerText = null;
 
     // Send data to the server
-    fetch(API.default, {
+    fetch(API.chat, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
     })
         .then(response => response.json())
         .then(data => {
-            console.log('Success:', data);
-
-
             if (data.textResponse) {
                 chatBox = createChatBox(data.textResponse, false);
             } else if (data.audioResponse) {
