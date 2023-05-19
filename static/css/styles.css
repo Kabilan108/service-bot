@@ -36,3 +36,8 @@ button.recording::after {
     right: 0;
     top: 0;
 }
+
+/* Styles for chat boxes */
+#conversation>div {
+    clear: both;
+}
